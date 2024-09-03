@@ -27,6 +27,9 @@
             <a href="blogs.html">Blogs</a>
             <a href="contact.html">Contact</a>
         </nav>
+        <div id="menu-btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
     <!-- header section ends -->
@@ -208,7 +211,16 @@
     </section>
 
     <!-- footer section ends -->
-
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menu-btn');
+            const navbar = document.querySelector('.navbar');
+    
+            menuBtn.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+            });
+        });
+    </script>
     <script src="script.js"></script>
 
 </body>
